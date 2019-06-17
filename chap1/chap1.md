@@ -24,3 +24,8 @@
 >> no2 = input('please input number:')
 please input number:
 ```
+
+숫자로 입력받기
+```python
+>> no1 = int(input())
+```
