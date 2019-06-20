@@ -49,7 +49,7 @@ pip3 install beautifulsoup4
 ---
 
 5. 태그 골라내기 - `select()`
-[실습 파일](chap1/practice_bs_fruits.html)
+[실습 파일](./practice_bs_fruits.html)
 
 ```python
 # 태그명
