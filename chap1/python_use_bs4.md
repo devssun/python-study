@@ -48,4 +48,30 @@ pip3 install beautifulsoup4
 
 ---
 
+5. 태그 골라내기 - `select()`
+[실습 파일](chap1/practice_bs_fruits.html)
+
+```python
+# 태그명
+>>> soup.select('span')
+  
+# 클래스
+>>> soup.select('.price')
+  
+# 하위태그
+# 하위태그를 가져올 때는 반드시 '>' 양쪽에 공백을 줘야한다
+>>> soup.select('상위태그 > 하위태그 > 하위태그' )
+
+# [0], [1] ... 을 줘서 원하는 순서의 값만 가져올 수 있다
+>>> soup.select('상위태그 > 하위태그 > 하위태그' )[0]
+
+# 특정 태그의 특정 클래스 가져오기
+>>> soup.select('상위태그.클래스이름 > 하위태그.클래스이름')
+
+# 특정 아이디 가져오기
+>>> soup.select('#아이디')
+```
+
+
+
 
